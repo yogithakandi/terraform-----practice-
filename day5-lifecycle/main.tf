@@ -3,7 +3,7 @@ resource "aws_instance" "server" {
   instance_type = "t3.micro"
 
   lifecycle {
-    reate_before_destroy = true
+    create_before_destroy = false
    
     }
 }
