@@ -25,7 +25,7 @@ resource "aws_db_instance" "default" {
   maintenance_window = "sun:04:00-sun:05:00"  # Maintenance every Sunday (UTC)
 
   # Enable deletion protection (to prevent accidental deletion)
-  deletion_protection = true
+  deletion_protection = false
 
   # Skip final snapshot
   skip_final_snapshot = true

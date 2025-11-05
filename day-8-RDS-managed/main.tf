@@ -16,7 +16,7 @@ resource "aws_db_instance" "default" {
 #   performance_insights_enabled          = true
 #   performance_insights_retention_period = 7  # Retain insights for 7 days
   maintenance_window = "sun:04:00-sun:05:00"  # Maintenance every Sunday (UTC)
-  deletion_protection = true
+  deletion_protection = false
   skip_final_snapshot = true
   depends_on = [ aws_db_subnet_group.sub-grp ]
 }
